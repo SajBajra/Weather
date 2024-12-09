@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    background-color: black;
 }
 
 body, html {
@@ -12,11 +13,10 @@ body, html {
 .container {
     width: 100%;
     height: 100vh;
-    background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .weather_container {
@@ -28,9 +28,14 @@ body, html {
     font-size: 4.5rem;
 }
 
-.location, .condition {
+.time_location, .condition {
     font-size: 1.2rem;
     margin-top: 0.5rem;
+}
+
+.condition i {
+    font-size: 2rem;
+    margin-right: 0.5rem;
 }
 
 nav {
@@ -62,4 +67,21 @@ nav form button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.chart-container {
+    width: 80%;
+    height: 40%;
+    margin-top: 2rem;
+}
+
+.loading {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }

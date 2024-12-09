@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,20 +14,25 @@
             <div class="temp">
                 <p>20</p>
             </div>
-            <div class="location">
-                <p>New York, USA</p>
-                <p>2022-01-15 12:30:00</p>
+            <div class="time_location">
+                <p>Lalitpur</p>
+                <p>2024-12-09 17:00:00</p>
             </div>
             <div class="condition">
+                <i class="wi wi-day-cloudy"></i>
                 <p>Partly Cloudy</p>
             </div>
         </div>
         <nav>
             <form>
-                <input type="text" placeholder="Search for a location" class="search_area"/>
+                <input type="text" placeholder="Search for a city/location" class="search_area" required/>
                 <button type="submit">Search</button>
             </form>
         </nav>
+        <div class="chart-container">
+            <canvas id="weatherChart"></canvas>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
